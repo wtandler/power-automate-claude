@@ -1,0 +1,21 @@
+{
+  "name": "power-automate-marketplace",
+  "version": "1.0.0",
+  "description": "Power Automate plugin for Claude Code",
+  "owner": {
+    "name": "wtandler"
+  },
+  "plugins": [
+    {
+      "name": "pa",
+      "source": "./",
+      "description": "Build and deploy Microsoft Power Automate flows from Claude Code using natural language",
+      "version": "1.0.0",
+      "author": {
+        "name": "wtandler"
+      },
+      "category": "automation",
+      "tags": ["power-automate", "microsoft", "flow", "power-platform", "pac-cli"]
+    }
+  ]
+}

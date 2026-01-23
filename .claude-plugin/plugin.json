@@ -1,0 +1,10 @@
+{
+  "name": "pa",
+  "version": "1.0.0",
+  "description": "Build and deploy Microsoft Power Automate flows from Claude Code using natural language. Use when working with Power Platform, PAC CLI, or flow automation.",
+  "author": {
+    "name": "wtandler"
+  },
+  "repository": "https://github.com/wtandler/power-automate-claude",
+  "license": "MIT"
+}

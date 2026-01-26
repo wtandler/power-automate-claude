@@ -98,12 +98,12 @@ You don't need to do anything in advance. Just ask for what you want, and Claude
 | URLs and links | Automatically hidden from AI processing |
 | Names and messages | Extracted and stored only on your machine |
 | API keys and tokens | Never exposed in error messages |
-| Flow credentials | Encrypted at rest using Windows security |
+| Flow credentials | Managed by Azure CLI, never stored locally |
 
 ### Key Security Features
 
 - **Data stays local** - Sensitive information never leaves your computer
-- **Encrypted storage** - Your secrets are encrypted, not stored as plain text
+- **Protected local storage** - Your secrets stay on your machine, never shared
 - **AI sees structure only** - Claude works with the flow's logic, not your private data
 - **No accidental commits** - Sensitive files are automatically excluded from git
 - **Defense in depth** - Multiple independent security layers protect your data

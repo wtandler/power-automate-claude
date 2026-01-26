@@ -287,7 +287,7 @@ $sanitized = $sanitized -replace '(api[_-]?key)[=:]\s*\S+', '$1=[REDACTED]'
 | Data | Location | Compliance Notes |
 |------|----------|------------------|
 | Flow definitions | User's local machine | No cloud storage of sensitive content |
-| Secrets file | User's local machine | Encrypted, never transmitted |
+| Secrets file | User's local machine | Local only, never transmitted |
 | API calls | Microsoft Azure (regional) | Uses existing Power Platform compliance |
 | Claude processing | Anthropic API | Only schema/structure sent, no PII |
 
@@ -304,9 +304,9 @@ $sanitized = $sanitized -replace '(api[_-]?key)[=:]\s*\S+', '$1=[REDACTED]'
 
 | Regulation | Relevant Controls |
 |------------|-------------------|
-| GDPR | Data minimization (only schema sent to AI), encryption at rest |
-| SOC 2 | Access controls (Windows auth), encryption, audit logging |
-| HIPAA | PHI not transmitted to AI, encryption at rest |
+| GDPR | Data minimization (only schema sent to AI), local-only storage |
+| SOC 2 | Access controls (Windows auth), local storage, audit logging |
+| HIPAA | PHI not transmitted to AI, local-only storage |
 | PCI-DSS | No cardholder data in scope (flows don't process payments) |
 
 ---
